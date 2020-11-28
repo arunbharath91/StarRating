@@ -1,0 +1,31 @@
+
+ .front-star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  color: #f8ce0b;
+}
+
+.back-star, .front-star {
+  display: inline-flex;
+}
+.stars-outer {
+  font-family: FontAwesome;
+  font-size: 1rem;
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.stars-outer .star::after {
+  content: '\f006';
+  color: #777;
+}
+
+.stars-outer .star.full::after {
+  content: '\f005';
+  color: #fd0;
+}
